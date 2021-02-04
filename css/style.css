@@ -1,15 +1,65 @@
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'sumactimber';
+    src: url('../font/sumac_timber-webfont.woff2') format('woff2'),
+         url('../font/sumac_timber-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --font-principal: 'sumactimber';
+    --font-second: 'Montserrat Alternates', sans-serif;
+
+}
+ul,li{
+  margin: 0;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+h1{
+    font-size: 75px;
+    letter-spacing: 6px;
+    line-height: 75px;
+    color: rgb(251, 251, 251);
+    /* -webkit-text-stroke: 1px darkred; */
+    font-family: var(--font-principal);
+    
+}
+h2{
+    font-size: 35px;
+    line-height: 50px;  
+}
+h3{
+    font-size: 20px;
+    padding: 20px;
+}
+h4{
+    font-size: 15px;
+    padding: 20px;
+}
+p{
+    font-size: 0.98rem;
+    line-height: 1.2rem;
+    color: var(--color-parrafo);
+    font-family: var(--font-second);
+}
+a{
+    text-decoration: none;
 }
 img{
     max-width: 100%;
     height: auto;
-    display: block
+    display: block; 
 }
-a{
-    text-decoration: none;
+figure{
+    margin: 0;
+    padding: 0;
 }
 
 /* maquetacion principal */
@@ -173,10 +223,21 @@ main{
     transition: all 0.5s ease-in; 
 }
 .slider img{
+    position: relative;
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
     object-position: center center;  
+}
+.slider figcaption{
+    position: absolute;
+    width: 40%;
+    top: 63%;
+    left: 5%;
+}
+.slider figcaption.position-2{
+    top: 20%;
+    left: 5%;
 }
 .hero-banner-btn{
     position: absolute;
