@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+a{
+    text-decoration: none;
+}
+
+/* maquetacion principal */
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "panel main";
+}
+.panel{
+    grid-area: panel;
+}
+main{
+    grid-area: main;
+}
+
+ /*:::::::::::: PANEL ::::::::::: */
+
+.panel{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 10000;
+    background-color: darkred;
+    box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+}
+/* panel logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+.logo img{
+    width: 200px;
+}
+/* panel menu */
+.menu{
+    height: 48%;
+    background-color: white;
+    clip-path: circle(95.7% at 51% 4%);
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+}
+.menu-items a{
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    color: black;
+    transition: all 0.3s ease-in;
+    border-top : 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.menu-items a:not(:last-child){
+    box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
+}
+.menu-items a:hover {
+    width: 300px;
+    background-color: darkred;
+    color: white;
+    transition: all 0.3s ease-in;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.menu-items a>i{
+    margin-right: 10px;
+    color: red;
+    
+}
+/* panel footer */
+.footer{
+    color: white; 
+}
+.main-footer{
+    padding: 15px 20px;
+}
+.header-footer{
+    text-align: center;
+}
+.header-footer i{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.header-footer a{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    color: darkred;
+    border-radius: 10px;
+}
+.enlaces-footer>ul{
+    list-style-type: none;
+}
+/*:::::::::::::::::::::::::::::::::::::::*/
+
+/* :::::::::::::: MAIN :::::::::::::::::: */
+
+/* header */
+.main-header{
+    position: fixed;
+    z-index: 10000;
+    width: 80vw;
+    padding: 8px 40px 8px 20px;
+    background-color: darkred;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-suscribete{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-suscribete a{
+    display: block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.header-suscribete a>i{
+    color: white;
+    margin-left: 10px;
+}
+.redes-sociales{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}.redes-sociales a{
+    color: white;
+}
+.redes-sociales :not(:last-child){
+    margin-right: 20px;
+}
+
+/* hero banner */
+.main-hero-banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.slider{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in; 
+}
+.slider img{
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: center center;  
+}
+.hero-banner-btn{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 20px;
+}
+.hero-banner-btn a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: darkred;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+.active{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in;
+}
+
+/**************************************/
+/* DESCRIPTION */
+
+.main-description{
+    font-family: var(--font-principal);
+}
+.content-description{
+    display: flex;
+}
+.img,.img-description{
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+.img-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img>.img-dentro{
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img/fachada_chorrillos.jpg");
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.3s ease-in; 
+}
+.img>.img-dentro:hover{
+    transition: all 0.5s ease-in;
+    transform: scale(1.2);
+}
+.img-desription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-desription-content{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+.line-description{
+    background-color: darkred;
+    height: 2px;
+    width: 30%;
+    margin: 10px auto;
+}
+.img-desription-content a{
+    display: block;
+    width: 70%;
+    background-color: rgb(243, 163, 14);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto 0;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* MAIN- DESCRIP */
+.main-descrip{
+    background-color: rgb(209, 209, 212);
+    color:rgb(48,48,48);
+    font-family: var(--font-principal);
+    padding: 80px 0 0;
+}
+.descrip-card-global{
+    background-color: white;
+    padding: 30px;
+    margin: 0 auto;
+}
+.descrip-card-global{
+    max-width:1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.descrip-card-global-prov{
+    max-width:1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 60px 30px; 
+}
+
+.descrip-card{
+    width: 300px;
+}
+.descrip-card-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.descrip-card p{
+    font-size: 14px;
+}
+.cubo{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cubo img{
+    display: block;
+}
+.card-prov{
+    width: 40%;
+    padding: 20px 80px;
+    text-align: center;
+}
+.card-prov p{
+    margin: 15px 0;
+}
+.btn-prov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-prov a{
+    display: block;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: rgb(44, 34, 34);
+    background-color: rgb(232,184,75);
+    border-radius: 50%;
+}
+.btn-prov a:first-child{
+    margin-right: 10px;
+}
+.carrousel-global{
+    position: relative;
+    max-width: 600px;
+    width: 70%;
+    height: 230px;
+}
+.carrusel li{
+    overflow: hidden; 
+    position: absolute; 
+    border: 3px solid #fff;              
+    background-color: #333; 
+}
+
+/* RESEVATION */
+
+.main-reservation{
+    background-color: rgb(209, 209, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-principal);
+    min-height: 100vh;
+}
+.reservation{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    height: 70vh;
+    text-align: center;
+    background-image: url("../img/fondo-description.jpg");
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
+}
+.reservation-1, .reservation-2{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    overflow: hidden;
+}
+.cuadrado{
+    width: 30%;
+    height: 250px;
+    padding: 30px;
+}
+.cuadrado p{
+    margin-bottom: 20px;
+}
+.rectangulo{
+    height: 250px;
+    width: 70%;
+    padding: 30px;
+}
+.rectangulo.background{
+    background-image: url("../img/fachada_chorrillos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.cuadrado.background{
+    background-image: url("../img/fachada_chorrillos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* MAIN - GOOGLE- MAP */
+.main-google-map iframe{
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
