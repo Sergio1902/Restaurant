@@ -27,30 +27,32 @@ h1{
     letter-spacing: 6px;
     line-height: 75px;
     color: rgb(251, 251, 251);
-    /* -webkit-text-stroke: 1px darkred; */
     font-family: var(--font-principal);
-    
 }
 h2{
-    font-size: 35px;
-    line-height: 50px;  
+    font-size: 18px;
+    line-height: 30px; 
+    font-family: var(--font-second);
 }
 h3{
-    font-size: 20px;
-    padding: 20px;
-}
-h4{
     font-size: 15px;
     padding: 20px;
+    font-family: var(--font-second);
+}
+h4{
+    font-size: 12px;
+    padding: 20px;
+    font-family: var(--font-second);
 }
 p{
-    font-size: 0.98rem;
-    line-height: 1.2rem;
-    color: var(--color-parrafo);
+    font-size: 13px;
+    line-height: 20px;
     font-family: var(--font-second);
+    color: rgba(49, 47, 47, 0.8);
 }
 a{
     text-decoration: none;
+    font-family: var(--font-principal);
 }
 img{
     max-width: 100%;
@@ -111,6 +113,7 @@ main{
 }
 .menu-items a{
     display: block;
+    letter-spacing: 0.5px;
     width: 100%;
     padding: 10px 30px;
     color: black;
@@ -118,6 +121,8 @@ main{
     border-top : 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
+    font-family: var(--font-second);
+    font-size: 13px;
 }
 .menu-items a:not(:last-child){
     box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
@@ -131,16 +136,21 @@ main{
     transition: all 0.3s ease-in;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    
+}
+.menu-items a:hover i{
+    color: white;
+    transition: all 0.3s ease-in;
 }
 .menu-items a>i{
-    margin-right: 10px;
-    color: red;
-    
+    margin-right: 15px;
+    color: darkred;
+    transition: all 0.3s ease-in;
+    font-size: 15px; 
 }
 /* panel footer */
 .footer{
     color: white; 
+    font-family: var(--font-second);
 }
 .main-footer{
     padding: 15px 20px;
@@ -182,6 +192,8 @@ main{
     justify-content: space-between;
 }
 .header-suscribete{
+    font-family: var(--font-second);
+    font-size: 13px;
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -193,12 +205,15 @@ main{
     border-radius: 10px;
     border: 1px solid white;
     color: white;
+    font-size: 16px;
 }
 .header-suscribete a>i{
     color: white;
     margin-left: 10px;
 }
 .redes-sociales{
+    font-family: var(--font-second);
+    font-size: 13px;
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -267,9 +282,6 @@ main{
 /**************************************/
 /* DESCRIPTION */
 
-.main-description{
-    font-family: var(--font-principal);
-}
 .content-description{
     display: flex;
 }
@@ -314,13 +326,19 @@ main{
 .img-desription-content a{
     display: block;
     width: 70%;
-    background-color: rgb(243, 163, 14);
+    background-color: rgb(240, 185, 83);
     border-radius: 10px;
     padding: 15px;
     margin: 20px auto 0;
     color: black;
     font-size: 18px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.img-desription-content a:hover{
+    background-color: rgb(243, 168, 28);
+    transition: all 0.3s ease;
 }
 
 /* MAIN- DESCRIP */
@@ -359,9 +377,6 @@ main{
     align-items: center;
     margin-bottom: 10px;
 }
-.descrip-card p{
-    font-size: 14px;
-}
 .cubo{
     width: 40px;
     height: 40px;
@@ -377,11 +392,11 @@ main{
 }
 .card-prov{
     width: 40%;
-    padding: 20px 80px;
+    padding: 20px 70px;
     text-align: center;
 }
 .card-prov p{
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 .btn-prov{
     display: flex;
@@ -397,6 +412,7 @@ main{
     background-color: rgb(232,184,75);
     border-radius: 50%;
 }
+
 .btn-prov a:first-child{
     margin-right: 10px;
 }
@@ -420,51 +436,96 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-principal);
     min-height: 100vh;
 }
 .reservation{
+    overflow: hidden;
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    height: 70vh;
     text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     background-image: url("../img/fondo-description.jpg");
     box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
     -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
 }
 .reservation-1, .reservation-2{
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
-    overflow: hidden;
 }
 .cuadrado{
     width: 30%;
     height: 250px;
-    padding: 30px;
+    padding: 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
+.rectangulo{
+    width: 70%;
+    height: 250px;
+    padding: 30px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+.rectangulo .background_rect,
+.cuadrado .background_cuad{
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-position: center center;
+}
+.rectangulo .background_rect{
+    background-image: url("../img/fachada_chorrillos.jpg");
+}
+.cuadrado .background_cuad{
+    background-image: url("../img/fachada_chorrillos.jpg");
+}
+
+/* hover */
+.reservation-1 .rectangulo,
+.reservation-2 .cuadrado{
+    padding: 0;
+}
+.reservation-2 .cuadrado .background_cuad,
+.reservation-1 .rectangulo .background_rect{
+    transition: all 0.3s ease-in-out;
+}
+.reservation-2 .cuadrado .background_cuad:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.reservation-1 .rectangulo .background_rect:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
 .cuadrado p{
     margin-bottom: 20px;
 }
-.rectangulo{
-    height: 250px;
+.cuadrado a{
+    display: block;
     width: 70%;
-    padding: 30px;
+    background-color: rgb(240, 185, 83);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto 0;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-.rectangulo.background{
-    background-image: url("../img/fachada_chorrillos.jpg");
-    background-size: cover;
-    background-position: center center;
+.cuadrado a:hover{
+    background-color: rgb(243, 168, 28);
+    transition: all 0.3s ease;
 }
-.cuadrado.background{
-    background-image: url("../img/fachada_chorrillos.jpg");
-    background-size: cover;
-    background-position: center center;
-}
+
 
 /* MAIN - GOOGLE- MAP */
 .main-google-map iframe{
