@@ -1,0 +1,24 @@
+
+
+@media screen and (max-width:1040px){
+    /* GRID-PANEL */
+    body{
+        grid-template-columns: 100%;
+        grid-template-areas: "main";
+    }
+    /* HEADER */
+    .main-header{
+        z-index: 10000;
+        width: 100vw;
+    }
+    .header-suscribete .hamburguesa{
+        display: block;
+        margin-right: 20px;
+    }
+    .panel{
+        display: none;
+    }
+    
+    
+}
+

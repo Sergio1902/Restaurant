@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mq.css">
     
 </head>
 <body>
@@ -18,11 +19,11 @@
         </div>
         <div class="menu">
             <div class="menu-items">
-                <a href=""><i class="fas fa-home"></i>Inicio</a>
-                <a href=""><i class="fas fa-home"></i>Productos</a>
-                <a href=""><i class="fas fa-home"></i>Ofertas</a>
-                <a href=""><i class="fas fa-home"></i>Punto de Venta</a>
-                <a href=""><i class="fas fa-home"></i>Contacto</a>
+                <a href="#slider"><i class="fas fa-home"></i>Inicio</a>
+                <a href="#description"><i class="fas fa-home"></i>Productos</a>
+                <a href="#descrip"><i class="fas fa-home"></i>Ofertas</a>
+                <a href="#reservation"><i class="fas fa-home"></i>Punto de Venta</a>
+                <a href="#google-map"><i class="fas fa-home"></i>Contacto</a>
                 <a href=""><i class="fas fa-home"></i>Blog</a>
             </div>
         </div>
@@ -44,10 +45,46 @@
         </div>
     </section>
 
+    <section class="panel-flotante">
+        <div class="logo">
+            <figure>
+                <img src="img/logo.png" alt="">
+            </figure>
+        </div>
+        <div class="panel-flotante-menu">
+            <div class="menu-items">
+                <a href="#slider" ><i class="fas fa-home"></i>Inicio</a>
+                <a href="#description" ><i class="fas fa-home"></i>Productos</a>
+                <a href="#descrip" ><i class="fas fa-home"></i>Ofertas</a>
+                <a href="#reservation" ><i class="fas fa-home"></i>Punto de Venta</a>
+                <a href="#google-map" ><i class="fas fa-home"></i>Contacto</a>
+                <a href="" ><i class="fas fa-home"></i>Blog</a>
+            </div>
+        </div>
+        <div class="panel-flotante-footer">
+            <article class="main-footer">
+                <div class="header-footer">
+                    <p><i class="fas fa-mobile-alt"></i></p>
+                    <span>Linea de Contacto</span>
+                    <a href="">984 703 695</a>
+                </div>
+                <div class="enlaces-footer">
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
     <main>
         <div class="main-header">
             <div class="header">
                 <div class="header-suscribete">
+                    <a class="hamburguesa">BTN</a>
                     <span>Recibe nuestras ofertas y novedades</span>
                     <a href="#"> Suscribete <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
@@ -59,14 +96,14 @@
                 </div>
             </div>
         </div>
-        <section class="main-hero-banner">
+        <section id="slider" class="main-hero-banner">
             <div class="hero-banner">
                 <div class="hero-banner-content">
                     <div class="slider active">
                         <figure>
                             <img src="img/slider1.jpg" alt="">
                             <figcaption>
-                                <h1>Que carne a la parrilla te provoca hoy ?</h1> 
+                                <h1>Que carne a la parrilla</h1> 
                             </figcaption>
                         </figure>                    
                     </div>
@@ -89,7 +126,6 @@
             </div>
         </section>
         <section id="description" class="main-description">
-            <div class="main-content">
                 <div class="content-description">
                     <div class="img">
                         <div class="img-dentro"></div>
@@ -101,12 +137,23 @@
                             <p>Hace más de 15 años, Armando Tafur siguió un sueño de éxito, tener el Restaurante con las mejores Carnes y Parrillas de Lima. Abriendo así su primer restaurante “El HORNERO” en el emblemático distrito de Chorrillos.</p>
                             <a href="">Descubre mas </a>
                         </div>
-                    </div>
-                    
+                    </div> 
                 </div>
-            </div>
+                <div class="content-description">
+                    <div class="img order-card">
+                        <div class="img-dentro"></div>
+                    </div>
+                    <div class="img-description">
+                        <div class="img-desription-content">
+                            <h2>LA KARRNE</h2>
+                            <hr class="line-description">
+                            <p>Hace más de 15 años, Armando Tafur siguió un sueño de éxito, tener el Restaurante con las mejores Carnes y Parrillas de Lima. Abriendo así su primer restaurante “El HORNERO” en el emblemático distrito de Chorrillos.</p>
+                            <a href="">Descubre mas </a>
+                        </div>
+                    </div> 
+                </div>
         </section>
-        <section class="main-descrip">
+        <section id="descrip" class="main-descrip">
             <div class="main-content">
                 <div class="descrip-card-global">
                     <div class="descrip-card">
@@ -161,7 +208,7 @@
                 </div>
             </div>
         </section>     
-        <section class="main-reservation">
+        <section id="reservation" class="main-reservation">
             <div class="main-content">
                 <div class="reservation">
                     <div class="reservation-1">
@@ -179,7 +226,7 @@
                         <div class="cuadrado">
                            <div class="background_cuad"></div>
                         </div>
-                        <div class="rectangulo text">
+                        <div class="rectangulo">
                             <h3>Reservaciones</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipsum dolor sit amet consectetur adipisicing elit. Hic, quibusdam este.ipisicing elit. Hic, quibusdam este.</p>
                             <a href=""></a>
@@ -188,16 +235,23 @@
                 </div>
             </div>
         </section>
-        <section class="main-google-map">
+        <section id="google-map" class="main-google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.1021888959285!2d-77.59826058951154!3d-11.105761425362424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9106dfd4b4adbc99%3A0xd6c935bb4836adbb!2sLa%20Karrne!5e0!3m2!1sen!2spe!4v1609621217548!5m2!1sen!2spe" height="450" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
+            <div class="btn-top">
+                <a href="#slider"><i class="fas fa-angle-double-up"></i></a>
+            </div>
         </section>
+
+        
+        
     </main>
 
 
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
     <script src="js/index.js" type="module"></script>
     <script src="js/slider.js" type="module"></script>
+    <script src="js/btn_hamburguesa.js" type="module"></script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.hislide.js"></script>

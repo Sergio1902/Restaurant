@@ -90,6 +90,27 @@ main{
     -webkit-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
     -moz-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
 }
+
+.panel-flotante{
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 10000;
+    background-color: darkred;
+    box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.is-active-panel{
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+
 /* panel logo */
 .logo{
     display: flex;
@@ -129,13 +150,21 @@ main{
     -webkit-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
 }
-.menu-items a:hover {
+.menu .menu-items a:hover {
     width: 300px;
     background-color: darkred;
     color: white;
     transition: all 0.3s ease-in;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+.panel-flotante-menu{
+    height: 50vh;
+    background-color: white;
+}
+.panel-flotante-menu .menu-items a:hover{
+    background-color: darkred;
+    color: white;
 }
 .menu-items a:hover i{
     color: white;
@@ -198,6 +227,9 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.header-suscribete .hamburguesa{
+    display: none;
 }
 .header-suscribete a{
     display: block;
@@ -297,7 +329,7 @@ main{
 }
 .img>.img-dentro{
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-image: url("../img/fachada_chorrillos.jpg");
     background-position: center center;
     background-size: cover;
@@ -336,18 +368,19 @@ main{
     text-align: center;
     transition: all 0.3s ease;
 }
-
 .img-desription-content a:hover{
     background-color: rgb(243, 168, 28);
     transition: all 0.3s ease;
 }
-
+.order-card{
+    order: 1;
+}
 /* MAIN- DESCRIP */
 .main-descrip{
     background-color: rgb(209, 209, 212);
     color:rgb(48,48,48);
     font-family: var(--font-principal);
-    padding: 80px 0 50px;
+    padding: 80px 0;
 }
 .descrip-card-global{
     background-color: white;
@@ -441,11 +474,12 @@ main{
 /* RESEVATION */
 
 .main-reservation{
-    background-color: rgb(209, 209, 212);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding-top: 8vh;
 }
 .reservation{
     overflow: hidden;
@@ -455,10 +489,7 @@ main{
     text-align: center;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-image: url("../img/fondo-description.jpg");
-    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
-    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
-    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
 }
 .reservation-1, .reservation-2{
     display: flex;
@@ -469,19 +500,17 @@ main{
     width: 30%;
     height: 250px;
     padding: 20px;
-    background-color: white;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+
 }
 .rectangulo{
     width: 70%;
     height: 250px;
     padding: 30px;
-    background-color: white;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
-
 
 .rectangulo .background_rect,
 .cuadrado .background_cuad{
@@ -541,4 +570,33 @@ main{
     width: 100%;
     border: 0;
     margin: 0;
+    padding-top: 50px;
+    height: 100vh;
 }
+.main-google-map{
+    position: relative;
+}
+.btn-top a{
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 77, 77);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+    
+}
+.btn-top a:hover{
+    background-color: darkred;
+    transition: all 0.3s ease;
+}
+
+
+
