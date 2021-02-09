@@ -190,6 +190,7 @@ main{
 .header-footer i{
     font-size: 20px;
     margin-bottom: 10px;
+    color: white;
 }
 .header-footer a{
     display: block;
@@ -199,10 +200,10 @@ main{
     background-color: white;
     color: darkred;
     border-radius: 10px;
+    font-size: 20px;
 }
-.enlaces-footer>ul{
-    list-style-type: none;
-}
+
+
 /*:::::::::::::::::::::::::::::::::::::::*/
 
 /* :::::::::::::: MAIN :::::::::::::::::: */
@@ -252,6 +253,11 @@ main{
     align-items: center;
 }.redes-sociales a{
     color: white;
+    transition: all 0.2s ease;
+}
+.redes-sociales a:hover{
+    transform: scale(1.3);
+    transition: all 0.2s ease;
 }
 .redes-sociales :not(:last-child){
     margin-right: 20px;
@@ -283,10 +289,25 @@ main{
     top: 63%;
     left: 5%;
 }
+
+/* COLORES H1 */
+.color-darkred{
+    color: darkred;
+}
+.color-white{
+    color: white;
+}
+/**************/
+.slider figcaption.position-1{
+    top: 50%;
+    left: 55%;
+    text-align: right;
+}
 .slider figcaption.position-2{
     top: 20%;
     left: 5%;
 }
+
 .hero-banner-btn{
     position: absolute;
     display: flex;
@@ -314,9 +335,9 @@ main{
 
 /**************************************/
 /* DESCRIPTION */
-
 .content-description{
     display: flex;
+    height: 50%;
 }
 .img,.img-description{
     flex: 0 0 50%;
@@ -396,20 +417,15 @@ main{
 }
 .descrip-card-global-prov{
     margin: 50px auto 0;
-    background-color: white;
     max-width: 1000px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 20px 30px; 
+    padding: 20px 30px 20px 0; 
     border-radius: 20px;
-    transition: all 0.3s ease;
 }
-.descrip-card-global-prov:hover{
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
-    transition: all 0.3s ease;
-}
+
 
 .descrip-card{
     width: 300px;
@@ -434,8 +450,16 @@ main{
 }
 .card-prov{
     width: 40%;
-    padding: 20px 70px;
     text-align: center;
+    background-color: white;
+    margin-right: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.card-prov:hover{
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
 }
 .card-prov p{
     margin-bottom: 15px;
