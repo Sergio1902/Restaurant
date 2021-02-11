@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+[id]{
+    scroll-margin-top: 2ex;
+}
 @font-face {
     font-family: 'sumactimber';
     src: url('../font/sumac_timber-webfont.woff2') format('woff2'),
@@ -93,7 +96,7 @@ main{
 
 .panel-flotante{
     position: fixed;
-    top: 8vh;
+    top: 7vh;
     left: 0;
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -239,6 +242,8 @@ main{
     border: 1px solid white;
     color: white;
     font-size: 16px;
+    width: 150px;
+    text-align: center;
 }
 .header-suscribete a>i{
     color: white;
@@ -299,15 +304,17 @@ main{
 }
 /**************/
 .slider figcaption.position-1{
-    top: 50%;
+    top: 40%;
     left: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
 }
 .slider figcaption.position-2{
     top: 20%;
     left: 5%;
 }
-
 .hero-banner-btn{
     position: absolute;
     display: flex;
@@ -332,9 +339,29 @@ main{
     visibility: visible;
     transition: all 0.5s ease-in;
 }
+.position-1 a{
+    display: block;
+    width: 50%;
+    padding: 15px 10px;
+    background-color: rgb(240, 185, 83);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+.position-1 a:hover{
+    background-color: rgb(243, 168, 28);
+    transition: all 0.3s ;
+}
 
 /**************************************/
 /* DESCRIPTION */
+.main-description{
+    height: 100vh;
+}
 .content-description{
     display: flex;
     height: 50%;
@@ -349,8 +376,7 @@ main{
     align-items: center;
 }
 .img>.img-dentro{
-    width: 100%;
-    height: 350px;
+    height: 330px;
     background-image: url("../img/fachada_chorrillos.jpg");
     background-position: center center;
     background-size: cover;
@@ -412,8 +438,7 @@ main{
     max-width:1000px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;  
+    justify-content: space-evenly; 
 }
 .descrip-card-global-prov{
     margin: 50px auto 0;
@@ -531,7 +556,7 @@ main{
 .rectangulo{
     width: 70%;
     height: 250px;
-    padding: 30px;
+    padding: 30px 60px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }

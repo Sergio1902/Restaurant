@@ -1,6 +1,20 @@
 
-
-@media screen and (max-width:1040px){
+@media screen and (max-width:1300px){
+    .card-prov{
+        margin-right: 50px;
+        margin-left: 30px;
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width:1140px){
+    .card-prov{
+        width: 35%;
+        margin-right: 10px;
+        margin-left: 30px;
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width:1050px){
     /* GRID-PANEL */
     body{
         grid-template-columns: 100%;
@@ -11,14 +25,88 @@
         z-index: 10000;
         width: 100vw;
     }
+    .header-suscribete{
+        width: 70%;
+    }
     .header-suscribete .hamburguesa{
         display: block;
         margin-right: 20px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .panel{
         display: none;
     }
-    
+
+    /* SLIDER */
+    .slider figcaption{
+        width: 42%;
+    }
+
+
+    .descrip-card-global{
+        padding: 20px 0;
+    }
+
+    /* CARROUSEL */
+    .card-prov{
+        margin-right: 50px;
+        margin-left: 40px;
+        padding: 20px 30px;
+    }
+
+
+
     
 }
+@media screen and (max-width:920px){
+    h2{
+        font-size: 17px;
+        line-height: 30px; 
+        font-family: var(--font-second);
+    }
+    h3{
+        font-size: 13px;
+        padding: 20px;
+        font-family: var(--font-second);
+    }
+    h4{
+        font-size: 11px;
+        padding: 20px;
+        font-family: var(--font-second);
+    }
+    /* NOSOTROS */
+    .img-desription-content{
+        padding: 0;
+    }
+    .img-desription-content p{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .img-desription-content a{
+        width: 50%;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
 
+    /* CONOCENOS */
+    .descrip-card{
+        padding: 0 20px;
+    }
+    .descrip-card P{
+        font-size: 11px;
+    }
+    .cubo{
+        margin-right: 0;
+    }
+
+     /* CARROUSEL */
+     .card-prov{
+        width: 30%;
+        margin-right: 20px;
+        margin-left: 40px;
+        padding: 15px 25px;
+    }
+}
