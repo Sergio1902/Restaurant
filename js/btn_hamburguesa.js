@@ -10,6 +10,7 @@ export default function btnHamburguesa() {
             $PANEL.classList.remove("is-active-panel")
         }
     })
+    
     // RESPONSIVE - PANEL FLOTANTE
     let breakPoint = window.matchMedia("(min-width:1041px)")
 

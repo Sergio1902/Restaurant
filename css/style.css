@@ -523,6 +523,7 @@ main{
 /* RESEVATION */
 
 .main-reservation{
+    position: relative;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -647,5 +648,36 @@ main{
     transition: all 0.3s ease;
 }
 
-
+/* MODAL */
+.mfp-inline-holder .mfp-content{
+    width: 50%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    left: 10%;
+}
+.mfp-inline-holder .mfp-content h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333560;;
+}
+.popup-modal-dismiss{
+    color: black;
+}
+.background{
+    background-color: blue;
+    height: 350px;
+}
+.background .modal-text{
+    padding: 30px 50px;
+}
+.modal-text ul{
+    padding-top: 15px;
+    font-family: var(--font2);
+}
+.modal-text ul li{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
 
