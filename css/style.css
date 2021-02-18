@@ -668,16 +668,169 @@ main{
     background-color: blue;
     height: 350px;
 }
-.background .modal-text{
-    padding: 30px 50px;
+
+
+
+
+/* POPUD - COTIZACION RESERVACIONES */
+
+.container-popud {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  height: 350px;
+  overflow: hidden;
 }
-.modal-text ul{
-    padding-top: 15px;
-    font-family: var(--font2);
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-.modal-text ul li{
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 25px;
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 3rem;
+  transition: all 0.2s 0.7s;
 }
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  transition: 1s 0.7s ease-in-out;
+  z-index: 5;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+/* CAJA DE TEXTO */
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #d1cfcf;
+  margin: 10px 0;
+  height: 35px;
+  border-radius: 55px;
+  padding: 0 0.4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 10px;  
+}
+.input-field input::placeholder {
+  color: rgb(146, 141, 141);
+  font-weight: 500;
+}
+.btn {
+    display: block;
+    background-color: darkred;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    font-family: var(--font-principal);
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+.btn:hover {
+    border: 1px solid darkred;
+    transition: all 0.3s;
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container-popud:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, darkred 0%, #b60404 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel-popud {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.panel-popud .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel-popud h2 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.panel-popud p {
+  padding: 0.7rem 0;
+  color: white;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
 

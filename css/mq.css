@@ -57,8 +57,16 @@
         padding: 20px 30px;
     }
 
+    /* POPUD RESERVATION */
 
-
+    .mfp-inline-holder .mfp-content{
+        width: 60%;
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        left: 0;
+        top: 5%;
+    }
     
 }
 @media screen and (max-width:920px){
@@ -110,3 +118,105 @@
         padding: 15px 25px;
     }
 }
+
+
+@media (max-width: 870px) {
+    
+
+
+    .mfp-inline-holder .mfp-content{
+        width: 50%;
+        height: 70%;
+    }
+    
+    .container-popud {
+      height: 450px;
+    }
+
+    .signin-signup {
+      width: 100%;
+      top: 95%;
+      transform: translate(-50%, -100%);
+      transition: 1s 0.8s ease-in-out;
+    }
+  
+    .signin-signup,
+    .container-popud.sign-up-mode .signin-signup {
+      left: 50%;
+    }
+    .panel-popud {
+
+      justify-content: inherit;
+      
+    }
+
+  
+    .panel-popud .content {
+      padding: 15px 12% 0;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.8s;
+    }
+    
+    .panel-popud h2 {
+      font-size: 1.2rem;
+    }
+  
+    .panel-popud p {
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+    }
+  
+    .btn.transparent {
+      width: 110px;
+      height: 35px;
+      font-size: 0.7rem;
+    }
+  
+    .container-popud:before {
+      width: 1500px;
+      height: 1500px;
+      transform: translateX(-50%);
+      left: 30%;
+      bottom: 68%;
+      right: initial;
+      top: initial;
+      transition: 2s ease-in-out;
+    }
+  
+    .container-popud.sign-up-mode:before {
+      transform: translate(-50%, 100%);
+      bottom: 32%;
+      right: initial;
+    }
+  
+    .container-popud.sign-up-mode .left-panel .image,
+    .container-popud.sign-up-mode .left-panel .content {
+      transform: translateY(-300px);
+    }
+  
+    .container.popud.sign-up-mode .right-panel .image,
+    .container.popud.sign-up-mode .right-panel .content {
+      transform: translateY(0px);
+    }
+  
+    .right-panel .image,
+    .right-panel .content {
+      transform: translateY(300px);
+    }
+  
+    .container.popud.sign-up-mode .signin-signup {
+      top: 5%;
+      transform: translate(-50%, 0);
+    }
+    .panels-container {
+      
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .left-panel{
+      padding: 0;
+    }
+    img.image{
+      display: none;
+    }
+  }
+  
