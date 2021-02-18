@@ -1,19 +1,12 @@
 
 @media screen and (max-width:1300px){
-    .card-prov{
-        margin-right: 50px;
-        margin-left: 30px;
-        padding: 20px 30px;
-    }
+   
+    .reservation{
+      max-width: 800px;
+      width: 100%;
+  }
 }
-@media screen and (max-width:1140px){
-    .card-prov{
-        width: 35%;
-        margin-right: 10px;
-        margin-left: 30px;
-        padding: 20px 30px;
-    }
-}
+
 @media screen and (max-width:1050px){
     /* GRID-PANEL */
     body{
@@ -50,13 +43,6 @@
         padding: 20px 0;
     }
 
-    /* CARROUSEL */
-    .card-prov{
-        margin-right: 50px;
-        margin-left: 40px;
-        padding: 20px 30px;
-    }
-
     /* POPUD RESERVATION */
 
     .mfp-inline-holder .mfp-content{
@@ -66,6 +52,10 @@
         overflow: hidden;
         left: 0;
         top: 5%;
+    }
+
+    .reservation{
+      max-width: 750px;
     }
     
 }
@@ -108,21 +98,17 @@
     }
     .cubo{
         margin-right: 0;
-    }
-
-     /* CARROUSEL */
-     .card-prov{
-        width: 30%;
-        margin-right: 20px;
-        margin-left: 40px;
-        padding: 15px 25px;
+    
     }
 }
 
 
 @media (max-width: 870px) {
-    
-
+  
+  .card-prov{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 
     .mfp-inline-holder .mfp-content{
         width: 50%;
@@ -149,8 +135,6 @@
       justify-content: inherit;
       
     }
-
-  
     .panel-popud .content {
       padding: 15px 12% 0;
       transition: transform 0.9s ease-in-out;
@@ -220,3 +204,59 @@
     }
   }
   
+  @media screen and (max-width:768px){
+    .card-prov{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width:658px){
+
+      /* HISTORIA */
+      .content-description{
+        flex-direction: column;
+      }
+      .img,.img-description{
+        width: 100%;
+        overflow: hidden;
+    }
+      .img>.img-dentro{
+        height: 25vh;
+    }
+      
+
+
+
+
+
+
+
+    .descrip-card-global {
+      flex-direction: column;
+      text-align: center;
+      width: 70%;
+    }
+    .descrip-card{
+      padding-bottom: 20px;
+      margin:0 auto 10px;
+      border-bottom: 1px solid rgba(134, 131, 131,0.5);
+    }
+
+
+
+    .descrip-card-global-prov{
+      flex-direction: column;
+      padding: 0;
+    }
+    .card-prov{
+      margin:0 auto;
+      width: 50%;
+    }
+    .carrousel-global{
+      margin-top: 50px;
+      width: 76%;
+    }
+
+
+    
+  }

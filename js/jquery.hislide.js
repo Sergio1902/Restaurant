@@ -9,13 +9,13 @@
         $.extend(true, setting, options);
         
         var states = [
-            { $zIndex: 1, width: 100, height: 100, top: 59, left: 100, $opacity: 0.2 },
-            { $zIndex: 2, width: 110, height: 120, top: 49, left: 20, $opacity: 0.4 },
-            { $zIndex: 3, width: 130, height: 168, top: 25, left: 90, $opacity: 0.7 },
-            { $zIndex: 4, width: 204, height: 220, top: 0, left: 160, $opacity: 1 },
-            { $zIndex: 3, width: 130, height: 168, top: 25, left: 320, $opacity: 0.7 },
-            { $zIndex: 2, width: 110, height: 120, top: 49, left: 420, $opacity: 0.4 },
-            { $zIndex: 1, width: 100, height: 100, top: 59, left: 320, $opacity: 0.2 }
+            { $zIndex: 1, width: 100, height: 100, top: 59, left: 10, $opacity: 0.2 },
+            { $zIndex: 2, width: 110, height: 120, top: 49, left: 35, $opacity: 0.4 },
+            { $zIndex: 3, width: 130, height: 168, top: 25, left: 60, $opacity: 0.7 },
+            { $zIndex: 4, width: 180, height: 220, top: 0, left: 100, $opacity: 1 },
+            { $zIndex: 3, width: 130, height: 168, top: 25, left: 200, $opacity: 0.7 },
+            { $zIndex: 2, width: 110, height: 120, top: 49, left: 250, $opacity: 0.4 },
+            { $zIndex: 1, width: 100, height: 100, top: 59, left: 285, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');

@@ -3,7 +3,7 @@ export default function slider(btnNext, btnPreviw, banner) {
     const $SIGUIENTE = document.querySelector(btnNext)
     const $ANTERIOR = document.querySelector(btnPreviw)
     const $BANNER = document.querySelectorAll(banner)
-    console.log($BANNER)
+
 
     let i = 0
 

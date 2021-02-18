@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 [id]{
-    scroll-margin-top: 2ex;
+    scroll-margin-top: 3ex;
 }
 @font-face {
     font-family: 'sumactimber';
@@ -87,7 +87,7 @@ main{
     top: 0;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    z-index: 10000;
+    z-index: 10002;
     background-color: darkred;
     box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
     -webkit-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
@@ -214,6 +214,7 @@ main{
 /* header */
 .main-header{
     position: fixed;
+    right: 0;
     z-index: 10000;
     width: 80vw;
     padding: 8px 40px 8px 20px;
@@ -360,14 +361,13 @@ main{
 /**************************************/
 /* DESCRIPTION */
 .main-description{
-    height: 100vh;
+    background-color: blueviolet;
 }
 .content-description{
     display: flex;
-    height: 50%;
 }
 .img,.img-description{
-    flex: 0 0 50%;
+    width: 50%;
     overflow: hidden;
 }
 .img-description{
@@ -376,7 +376,7 @@ main{
     align-items: center;
 }
 .img>.img-dentro{
-    height: 330px;
+    height: 50vh;
     background-image: url("../img/fachada_chorrillos.jpg");
     background-position: center center;
     background-size: cover;
@@ -477,6 +477,7 @@ main{
     width: 40%;
     text-align: center;
     background-color: white;
+    margin-left: 100px;
     margin-right: 100px;
     padding: 20px;
     border-radius: 20px;
@@ -528,14 +529,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding-top: 8vh;
+    height: 100vh;
+    
 }
 .reservation{
     overflow: hidden;
     max-width: 900px;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -620,8 +620,7 @@ main{
     width: 100%;
     border: 0;
     margin: 0;
-    padding-top: 50px;
-    height: 100vh;
+    height: 92vh;
 }
 .main-google-map{
     position: relative;
@@ -834,3 +833,6 @@ form.sign-in-form {
 }
 
 
+.none{
+    display: none;
+}
