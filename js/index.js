@@ -7,16 +7,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     btnHamburguesa()
     ORDER()
 
-        $('.btn-reservar').magnificPopup({   
-                                         })
-        $(document).on('click', '.popup-modal-dismiss', function (e) {
-        e.preventDefault();
-        $.magnificPopup.close();       
-        });
-
-        
-
-
-
+    
+     
 })
 

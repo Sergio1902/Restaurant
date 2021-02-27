@@ -18,9 +18,6 @@
         z-index: 10000;
         width: 100vw;
     }
-    .header-suscribete{
-        width: 70%;
-    }
     .header-suscribete .hamburguesa{
         display: block;
         margin-right: 20px;
@@ -32,6 +29,18 @@
     .panel{
         display: none;
     }
+    .main-header .header-suscribete{
+        width: 60%;
+    }
+    .main-header .redes-sociales{
+        width: 40%;
+    }
+    .header-suscribete span{
+      font-size: 12px;
+      
+  }
+
+
 
     /* SLIDER */
     .slider figcaption{
@@ -54,6 +63,7 @@
         top: 5%;
     }
 
+    /* RESERVATIONS */
     .reservation{
       max-width: 750px;
     }
@@ -105,10 +115,23 @@
 
 @media (max-width: 870px) {
   
-  .card-prov{
-    margin-left: 70px;
-    margin-right: 70px;
+
+  /* RESERVATIONS */
+  .reservation{
+    max-width: 650px;
   }
+  .cuadrado,
+  .rectangulo{
+    height: 200px;
+  }
+  .cuadrado p,
+  .rectangulo p{
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+
+
 
     .mfp-inline-holder .mfp-content{
         width: 50%;
@@ -205,14 +228,39 @@
   }
   
   @media screen and (max-width:768px){
-    .card-prov{
-      margin-left: 20px;
+
+    /* HEADER */
+    .header-suscribete a{
+      padding: 5px 10px;
+      font-size: 15px;
+
+  }
+    .descrip-card-global-prov .card-prov{
+      padding: 15px;
+      width: 240px;
       margin-right: 20px;
     }
   }
   @media screen and (max-width:658px){
 
-      /* HISTORIA */
+    /* HEADER */
+    .main-header .header-suscribete{
+        width: 70%;
+    }
+    .main-header .redes-sociales{
+        width: 30%;
+    }
+    .header-suscribete a{
+      border-radius: 10px;
+      font-size: 13px;
+      width: 150px;
+    }.header-suscribete span{
+      font-size: 9px;
+      margin-right: 15px;
+    }
+
+
+     /* HISTORIA */
       .content-description{
         flex-direction: column;
       }
@@ -220,43 +268,139 @@
         width: 100%;
         overflow: hidden;
     }
-      .img>.img-dentro{
-        height: 25vh;
-    }
+    .img,.img-description{
+      height:35vh;
+  }
       
+    /* QUE PLATOS DESEAS */
 
 
 
-
-
-
-
-    .descrip-card-global {
+    .descrip-card-global{
+      background-color: inherit;
       flex-direction: column;
-      text-align: center;
-      width: 70%;
-    }
-    .descrip-card{
-      padding-bottom: 20px;
-      margin:0 auto 10px;
+      width: 55%;
+  }
+  .descrip-card{
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
       border-bottom: 1px solid rgba(134, 131, 131,0.5);
-    }
+      margin-bottom: 10px;
+  }
+  .descrip-card-title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  .descrip-card-title h3{
+    padding: 10px;
+  }
+  .cubo{
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      margin-right: 10px;
+  }
+  .cubo img{
+      display: block;
+      width: 18px;
+ 
+      
+  }
 
 
 
+    /* CARROUSEL */
     .descrip-card-global-prov{
       flex-direction: column;
+      
+    }
+  .descrip-card-global-prov .card-prov{
+      order: 1;
+      margin-top: 20px;
+
+    }
+    .descrip-card-global-prov .card-prov h3{
       padding: 0;
-    }
-    .card-prov{
-      margin:0 auto;
-      width: 50%;
-    }
-    .carrousel-global{
-      margin-top: 50px;
-      width: 76%;
+      margin-bottom: 10px;
     }
 
+    /* RESERVATIONS */
+    .reservation{
+      max-width: 550px;
+    }
+    .cuadrado{
+      width: 40%;
+    }
+    .rectangulo{
+      width: 66%;
+      padding: 10px 20px;
+    }
+    .cuadrado,.rectangulo{
+      height: 200px;
+    }
+    .cuadrado p,
+    .rectangulo p{
+      font-size: 11px;
+      line-height: 17px;
+    }
+    .cuadrado a{
+      display: block;
+      width: 65%;
+      background-color: rgb(240, 185, 83);
+      border-radius: 5px;
+      padding: 5px;
+      margin: 20px auto 0;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+  }
 
+    
+  }  
+  @media screen and (max-width:500px){
+     /* HEADER */
+     .main-header .header-suscribete{
+      width: 100%;
+    }
+    .header-suscribete a{
+      width: 120px;
+
+  }
+    .main-header .redes-sociales{
+      display: none;
+    }
+    .header-suscribete span{
+      font-size: 11px;
+
+  }
+
+    /* RESERVATION */
+    .reservation{
+      max-width: 350px;
+      width: 100%;
+      box-shadow: none;
+    }
+    .reservation h3{
+      padding: 10px;
+    }
+    .cuadrado, .rectangulo{
+      width: 80%;
+      height: 160px;
+      box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
+    }
+    .reservation-1, .reservation-2{
+        flex-direction: column;
+    }
+    .reservation-2 .cuadrado{
+        display: none;
+    }
     
   }
