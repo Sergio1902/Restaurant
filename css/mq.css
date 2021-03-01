@@ -293,9 +293,9 @@
         width: 100%;
         overflow: hidden;
     }
-    .img,.img-description{
-      height:35vh;
-  }
+      .img,.img-description{
+        height:32vh;
+    }
       
     /* QUE PLATOS DESEAS */
 
@@ -424,18 +424,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.hero-banner-btn a {
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
+  .hero-banner-btn a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
 
-}
-.slider figcaption.position-2 h1{
-  font-size: 48px;
-}
-
-
-
+  }
+  .slider figcaption.position-2 h1{
+    font-size: 48px;
+  }
 
     /* RESERVATION */
     .reservation{
