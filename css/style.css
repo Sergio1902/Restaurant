@@ -26,7 +26,7 @@ h1,h2,h3,h4{
     margin: 0;
 }
 h1{
-    font-size: 75px;
+    font-size: 70px;
     letter-spacing: 6px;
     line-height: 75px;
     color: rgb(251, 251, 251);
@@ -297,10 +297,9 @@ main{
 }
 .slider figcaption{
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 100%;
     top: 63%;
-    left: 5%;
 }
 
 /* COLORES H1 */
@@ -313,7 +312,7 @@ main{
 /**************/
 .slider figcaption.position-1{
     top: 40%;
-    left: 55%;
+    left: 45%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -442,6 +441,7 @@ main{
     background-color: white;
     padding: 30px;
     margin: 0 auto;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
 }
 .descrip-card{
     width: 300px;
