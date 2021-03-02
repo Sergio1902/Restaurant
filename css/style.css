@@ -90,8 +90,6 @@ main{
     z-index: 10002;
     background-color: darkred;
     box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
-    -webkit-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
-    -moz-box-shadow: 7px 0px 25px -10px rgba(0,0,0,0.46);
 }
 
 .panel-flotante{
@@ -121,6 +119,9 @@ main{
     align-items: center;
     padding: 20px;
     background-color: white;
+}
+.logo a{
+    display: block;
 }
 .logo img{
     width: 200px;
@@ -384,8 +385,8 @@ main{
     box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 
-/**************************************/
-/* DESCRIPTION */
+/********************************************************************/
+/**************************** HISTORIA  *****************************/
 .content-description{
     display: flex;
 }
@@ -439,7 +440,7 @@ main{
 }
 .descrip-card-global
 {
-    max-width:1000px;
+    max-width:950px;
     width: 100%;
     display: flex;
     justify-content: space-evenly; 
@@ -453,13 +454,22 @@ main{
 }
 .descrip-card .card-text{
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 200px;
+}
+.descrip-card .card-text p{
+    font-size: 11px;
 }
 .descrip-card-title{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
+    
 }
+
 .cubo{
     width: 40px;
     height: 40px;
@@ -475,10 +485,12 @@ main{
 }
 .card-img{
     overflow: hidden;
+    height: 250px;
 }
 
 .descrip-card .card-img img{
     transition: all 0.3s;
+    height: 250px;
 }
 .descrip-card .card-img:hover img{
     transform: scale(1.2);
@@ -497,18 +509,17 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
-    
+    align-items: center;  
 }
 .descrip-card-global-prov .card-prov{
     text-align: center;
     width: 280px;
     padding: 30px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.9);
     border-radius: 20px;
     transition: all 0.3s; 
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.51) inset;
 }
-  
 
 .download{
     display: block;
@@ -532,7 +543,7 @@ main{
 
 .main-reservation{
     position: relative;
-    background-color: white;
+    background-color: rgb(209, 209, 212);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,9 +567,10 @@ main{
 .cuadrado{
     width: 30%;
     height: 250px;
-    padding: 20px;
+    padding: 30px 20px 20px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    background-color: white;
 
 }
 .rectangulo{
@@ -567,6 +579,8 @@ main{
     padding: 30px 60px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    background-color: white;
+
 }
 
 .rectangulo .background_rect,
@@ -644,15 +658,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 77, 77);
+    background-color: darkred;
     transition: all 0.3s ease;
     color: white;
     font-size: 30px;
     
 }
 .btn-top a:hover{
-    background-color: darkred;
-    transition: all 0.3s ease;
+        transition: all 0.5s;
+        background-color: rgb(228, 51, 51);
+        box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 
 /* MODAL */
@@ -721,6 +736,7 @@ form.sign-in-form {
   font-size: 1.5rem;
   color: #444;
   margin-bottom: 10px;
+  text-align: center;
 }
 /* CAJA DE TEXTO */
 .input-field {
@@ -762,11 +778,12 @@ form.sign-in-form {
     text-align: center;
     font-family: var(--font-principal);
     margin-top: 10px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 .btn:hover {
-    border: 1px solid darkred;
-    transition: all 0.3s;
+    transition: all 0.5s;
+    background-color: rgb(228, 51, 51);
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 .panels-container {
   position: absolute;
@@ -786,7 +803,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, darkred 0%, #b60404 100%);
+  background-image: linear-gradient(-45deg, rgb(119, 2, 2) 0%, #b60404 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -809,7 +826,7 @@ form.sign-in-form {
 
 .left-panel {
   pointer-events: all;
-  padding: 3rem 17% 2rem 12%;
+  padding: 0 30px;
 }
 
 .panel-popud .content {
@@ -828,6 +845,9 @@ form.sign-in-form {
 .panel-popud p {
   padding: 0.7rem 0;
   color: white;
+}
+.panel-popud img{
+    width: 260px;
 }
 
 .btn.transparent {
