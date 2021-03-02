@@ -204,6 +204,11 @@ main{
     color: darkred;
     border-radius: 10px;
     font-size: 20px;
+    transition: all 0.3s;
+}
+.header-footer a:hover{
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
+    transition: all 0.3s;
 }
 
 
@@ -253,7 +258,13 @@ main{
     font-size: 16px;
     width: 150px;
     text-align: center;
+    transition: all 0.3s;
 }
+.header-suscribete a:hover{
+    background-color: rgb(105, 4, 4);
+    transition: all 0.3s;
+}
+
 .header-suscribete a>i{
     color: white;
     margin-left: 10px;
@@ -328,7 +339,9 @@ main{
     bottom: 5%;
     left: 5%;
 }
+/* BOTONES BANNER */
 .hero-banner-btn a{
+    position: relative;
     display: block;
     width: 60px;
     height: 60px;
@@ -340,6 +353,12 @@ main{
     align-items: center;
     font-size: 30px;
     color: white;
+    transition: all 0.5s;
+}
+.hero-banner-btn a:hover{
+    transition: all 0.5s;
+    background-color: rgb(228, 51, 51);
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 .active{
     opacity: 1;
@@ -360,8 +379,9 @@ main{
     transition: all 0.3s;
 }
 .position-1 a:hover{
-    background-color: rgb(243, 168, 28);
+    background-color: rgb(250, 166, 11);
     transition: all 0.3s ;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 
 /**************************************/
@@ -494,7 +514,7 @@ main{
     display: block;
     width: 80%;
     background-color: rgb(240, 185, 83);
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     color: black;
     font-size: 18px;
@@ -502,9 +522,10 @@ main{
     transition: all 0.3s ease;
     margin: 20px auto 0;
 }
-.download a:hover{
+.download:hover{
     background-color: rgb(243, 168, 28);
     transition: all 0.3s ease;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 
 /* RESEVATION */
@@ -596,8 +617,9 @@ main{
     transition: all 0.3s ease;
 }
 .cuadrado a:hover{
-    background-color: rgb(243, 168, 28);
+    background-color: #f6b12f;
     transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.51) inset;
 }
 
 
@@ -867,7 +889,12 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 .social-network a{
     display: block;
+}
+.social-network:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
