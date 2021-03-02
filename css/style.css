@@ -415,7 +415,7 @@ main{
     background-color: rgb(209, 209, 212);
     color:rgb(48,48,48);
     font-family: var(--font-principal);
-    padding: 80px 0;
+    padding: 110px 0;
 }
 .descrip-card-global
 {
@@ -470,6 +470,7 @@ main{
     background-image: url(../img/fondo-description1.jpg);
     background-position: center center;
     background-size: cover;
+    padding: 180px 0;
 }
 .descrip-card-global-prov{
     max-width: 1000px;
@@ -477,7 +478,6 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
-    padding: 100px 0 60px;
     
 }
 .descrip-card-global-prov .card-prov{
@@ -488,35 +488,11 @@ main{
     border-radius: 20px;
     transition: all 0.3s; 
 }
-.descrip-card-global-prov .card-prov:hover{
-    transition: all 0.3s;
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.18);
+  
 
-}
 .download{
-    padding: 50px 0;
-    background-color: rgba(255, 255, 255,0.1);
-    
-}
-.content-download{
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 20px 0;
-    
-
-}
-.download span{
-    font-family: var(--font-second);
-    font-size: 15px;
-    color: white;
-    
-}
-.download a{
     display: block;
-    width: 30%;
+    width: 80%;
     background-color: rgb(240, 185, 83);
     padding: 10px;
     border-radius: 10px;
