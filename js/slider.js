@@ -8,7 +8,7 @@ export default function slider(btnNext, btnPreviw, banner) {
     let i = 0
 
     document.addEventListener("click", function (e) {
-        if(e.target === $SIGUIENTE){
+        if(e.target === $SIGUIENTE ||  e.target.matches(`${btnNext} *`)){
             e.preventDefault()
             // si el valor es 0
             $BANNER[i].classList.remove("active")
@@ -18,7 +18,7 @@ export default function slider(btnNext, btnPreviw, banner) {
             }
             $BANNER[i].classList.add("active")
         }
-        if(e.target === $ANTERIOR){
+        if(e.target === $ANTERIOR || e.target.matches(`${btnPreviw} *`)){
             e.preventDefault()
               // si el valor es 0
               $BANNER[i].classList.remove("active")

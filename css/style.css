@@ -94,7 +94,7 @@ main{
 
 .panel-flotante{
     position: fixed;
-    top: 7vh;
+    top: 50px;
     left: 0;
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -225,6 +225,7 @@ main{
     right: 0;
     z-index: 10000;
     width: 80vw;
+    height: 50px;
     background-color: darkred;
     color: white;
 }
@@ -641,6 +642,8 @@ main{
     border: 0;
     margin: 0;
     height: 92vh;
+    background: rgb(244,244,244);
+
 }
 .main-google-map{
     position: relative;
@@ -650,6 +653,7 @@ main{
     display: block;
     bottom: 10px;
     left: 50%;
+    transform: translateX(-50%);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -659,8 +663,8 @@ main{
     background-color: darkred;
     transition: all 0.3s ease;
     color: white;
-    font-size: 30px;
-    
+    font-size: 30px; 
+    z-index: 11000;
 }
 .btn-top a:hover{
         transition: all 0.5s;
@@ -899,7 +903,7 @@ ul{
 /* SOCIAL NETWORK*/
 .social-network{
     position: fixed;
-    z-index: 12000;
+    z-index: 15000;
     bottom: 30px;
     right: 30px;
     width: 80px;
