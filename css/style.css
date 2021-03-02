@@ -518,9 +518,9 @@ main{
     width: 280px;
     padding: 30px;
     background-color: rgba(255, 255, 255,0.9);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 0.3s; 
-    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.51) inset;
+    /* box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.51) inset; */
 }
 
 .download{
@@ -569,7 +569,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.6);
     height: 230px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;

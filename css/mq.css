@@ -138,49 +138,37 @@
 
 
     .mfp-inline-holder .mfp-content{
-        width: 50%;
+      width: 70%;
         height: 70%;
     }
-    
     .container-popud {
       height: 450px;
     }
-
     .signin-signup {
       width: 100%;
       top: 95%;
       transform: translate(-50%, -100%);
       transition: 1s 0.8s ease-in-out;
     }
-  
     .signin-signup,
     .container-popud.sign-up-mode .signin-signup {
       left: 50%;
     }
     .panel-popud {
-
       justify-content: inherit;
-      
     }
     .panel-popud .content {
       padding: 15px 12% 0;
       transition: transform 0.9s ease-in-out;
       transition-delay: 0.8s;
     }
-    
+
     .panel-popud h2 {
       font-size: 1.2rem;
     }
-  
     .panel-popud p {
       font-size: 0.9rem;
-      padding: 0.5rem 0;
-    }
-  
-    .btn.transparent {
-      width: 110px;
-      height: 35px;
-      font-size: 0.7rem;
+      padding: 0.5rem 40px;
     }
   
     .container-popud:before {
@@ -225,6 +213,8 @@
     }
     .left-panel{
       padding: 0;
+      height: 20px;
+      
     }
     img.image{
       display: none;
@@ -360,6 +350,16 @@
       text-align: center;
       transition: all 0.3s ease;
   }
+  .panel-popud h2 {
+    font-size: 1.1rem;
+  }
+  .panel-popud p {
+    font-size: 0.8rem;
+    padding: 0.5rem 40px;
+  }
+  .panel-popud .content{
+    padding: 15px 5% 0;
+  }
 
     
   }  
@@ -417,6 +417,9 @@
     .reservation h3{
       padding: 10px;
     }
+    .reservation-1 .cuadrado{
+      padding: 0 40px;
+    }
     .cuadrado, .rectangulo{
       width: 80%;
       height: 160px;
@@ -428,7 +431,38 @@
     .reservation-2 .cuadrado{
         display: none;
     }
-    
+    .reservation-2{
+      margin-top: 30px;
+      
+    }
+    .reservation-2 p{
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+      /* RESERVACIONES POPUD */
+
+      
+      .panel-popud h2 {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+      .panel-popud p {
+        font-size: 0.8rem;
+        padding: 0.5rem 20px;
+      }
+      .title{
+        font-size: 20px;
+      }
+
+
+
+
+
+
+
+
+   
     /* GOOGLE MAP */
 
     .main-google-map iframe{
