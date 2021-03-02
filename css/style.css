@@ -548,11 +548,10 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 .reservation{
     overflow: hidden;
-    max-width: 900px;
+    max-width: 850px;
     width: 100%;
     text-align: center;
     border-top-left-radius: 30px;
@@ -564,23 +563,22 @@ main{
     justify-content: center;
     align-items: center;
 }
-.cuadrado{
-    width: 30%;
-    height: 250px;
-    padding: 30px 20px 20px;
+.cuadrado, .rectangulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 230px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
-    background-color: white;
-
+}
+.cuadrado{
+    width: 30%; 
+    padding: 0 20px;
 }
 .rectangulo{
     width: 70%;
-    height: 250px;
-    padding: 30px 60px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    background-color: white;
-
+    padding: 0 60px;
 }
 
 .rectangulo .background_rect,
@@ -615,9 +613,7 @@ main{
     transition: all 0.3s ease-in-out;
 }
 
-.cuadrado p{
-    margin-bottom: 20px;
-}
+
 .cuadrado a{
     display: block;
     width: 70%;
