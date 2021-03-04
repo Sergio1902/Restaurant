@@ -5,9 +5,12 @@ export default function btnHamburguesa() {
     document.addEventListener("click",function (e) {
          if(e.target.matches(".hamburguesa") || e.target.matches(`.hamburguesa *`)){
              $PANEL.classList.toggle("is-active-panel")
+             document.querySelector(".hamburguesa").classList.toggle("is-active")
+
         }       
         if(e.target.matches(".panel-flotante-menu .menu-items a")){
             $PANEL.classList.remove("is-active-panel")
+            document.querySelector(".hamburguesa").classList.remove("is-active")
         }
     })
     
@@ -23,8 +26,5 @@ export default function btnHamburguesa() {
     }
 // add listener - utilizado solo en medias querys
         breakPoint.addListener(responsive)
-
-
-
 
 }

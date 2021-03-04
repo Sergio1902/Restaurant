@@ -21,10 +21,7 @@
     .header-suscribete .hamburguesa{
         display: block;
         margin-right: 20px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
     }
     .panel{
         display: none;
