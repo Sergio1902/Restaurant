@@ -104,6 +104,16 @@ main{
     transform: translateX(-100%);
     transition: all 0.5s ease;
 }
+.menu .menu-items a:nth-child(4)>i,
+.menu .menu-items a:nth-child(5)>i,
+.panel-flotante-menu .menu-items a:nth-child(4)>i,
+.panel-flotante-menu .menu-items a:nth-child(5)>i  {
+    margin-right: 12px;
+}
+.menu .menu-items a:nth-child(6)>i,
+.panel-flotante-menu .menu-items a:nth-child(6)>i{
+    margin-right: 19px;
+}
 
 .is-active-panel{
     transform: translateX(0);
@@ -687,7 +697,6 @@ main{
     transition: all 0.3s ease;
     color: white;
     font-size: 30px; 
-    z-index: 11000;
     bottom: 10px;
 }
 .btn-top a:hover{
@@ -776,7 +785,7 @@ form.sign-in-form {
   align-items: center;
   outline: none;
 }
-.input-field input::placeholder {
+input::placeholder {
   color: rgb(146, 141, 141);
   font-weight: 500;
 }
