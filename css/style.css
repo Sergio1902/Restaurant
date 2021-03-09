@@ -437,12 +437,23 @@ main{
 }
 .img>.img-dentro{
     height: 50vh;
-    background-image: url("../img/fachada_chorrillos.jpg");
+    background-image: url("../img/parrillero.png");
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.3s ease-in; 
+}
+.img>.img-dentro2{
+    height: 50vh;
+    background-image: url("../img/parrillero2.png");
     background-position: center center;
     background-size: cover;
     transition: all 0.3s ease-in; 
 }
 .img>.img-dentro:hover{
+    transition: all 0.5s ease-in;
+    transform: scale(1.2);
+}
+.img>.img-dentro2:hover{
     transition: all 0.5s ease-in;
     transform: scale(1.2);
 }
