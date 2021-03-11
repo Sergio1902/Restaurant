@@ -147,8 +147,6 @@
     z-index: 2;
     width: inherit;
 }
-
-
     .mfp-inline-holder .mfp-content{
       width: 70%;
         height: 70%;
@@ -158,7 +156,7 @@
     }
     .signin-signup {
       width: 100%;
-      top: 99%;
+      top: 88%;
       transform: translate(-50%, -100%);
       transition: 1s 0.8s ease-in-out;
     }
@@ -170,7 +168,7 @@
       justify-content: inherit;
     }
     .panel-popud .content {
-      padding: 15px 12% 0;
+      padding: 15px 11% 0;
       transition: transform 0.9s ease-in-out;
       transition-delay: 0.8s;
     }
@@ -180,15 +178,15 @@
     }
     .panel-popud p {
       font-size: 0.9rem;
-      padding: 0.5rem 40px;
+      padding: 0.5rem 50px;
     }
   
     .container-popud:before {
       width: 1500px;
       height: 1500px;
       transform: translateX(-50%);
-      left: 30%;
-      bottom: 68%;
+      left: 35%;
+      bottom: 70%;
       right: initial;
       top: initial;
       transition: 2s ease-in-out;
@@ -297,22 +295,31 @@
     }
 
   }
+  @media screen and (max-width:720px){
+    /* HEADER */
+    .main-header .header-suscribete{
+      width: 70%;
+  }
+  .main-header .redes-sociales{
+      width: 30%;
+  }
+  .header-suscribete a{
+    border-radius: 10px;
+    font-size: 13px;
+    width: 135px;
+  }.header-suscribete span{
+    font-size: 11px;
+    margin-right: 15px;
+  }
+  .main-header .redes-sociales span{
+    font-size: 10px;  
+  }
+  }
   @media screen and (max-width:658px){
 
     /* HEADER */
-    .main-header .header-suscribete{
-        width: 70%;
-    }
-    .main-header .redes-sociales{
-        width: 30%;
-    }
-    .header-suscribete a{
-      border-radius: 10px;
-      font-size: 13px;
-      width: 150px;
-    }.header-suscribete span{
-      font-size: 9px;
-      margin-right: 15px;
+    .header-suscribete span{
+      font-size: 10px;
     }
 
     /* SLIDERS */
@@ -401,7 +408,6 @@
     }
     .cuadrado a {
       display: block;
-      width: 60%;
       background-color: rgb(240, 185, 83);
       border-radius: 10px;
       padding: 5px;
@@ -521,8 +527,7 @@
     font-size: 20px;
   }
   .signin-signup {
-
-    top: 94%;
+    top: 90%;
   }
 
 
@@ -577,7 +582,7 @@
 .panel-popud h2 {
   margin: 0 auto 5px;
   font-size: 0.85rem;
-  padding: 0 10px;
+  padding: 0 20px;
   line-height: 20px;
 }
 .panel-popud p {
@@ -589,7 +594,7 @@
   font-size: 18px;
 }
 .signin-signup {
-  top: 91%;
+  top: 85%;
 }form {
   padding: 0rem 2rem;
 }
@@ -648,3 +653,30 @@ input::placeholder {
     padding: 100px 0;
 }
   }
+  @media screen and (max-width:320px){
+    .panel-popud h2 {
+      padding: 0 10px;
+  }
+  .panel-popud p {
+    font-size: 0.6rem;
+    line-height: 15px;
+    padding: 0.4rem 10px;
+}
+.signin-signup {
+  top: 80%;
+}
+form.sign-in-form{
+  height: 200px;
+  }
+  .contact-form-error{
+    height: 10px;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .btn {
+    padding: 6px 20px;
+    font-size: 14px;
+    width: 110px;
+  }
+    }

@@ -162,9 +162,9 @@ main{
     font-size: 13px;
 }
 .menu-items a:not(:last-child){
-    box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
-    -webkit-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.35);
+    box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 9px 6px -10px rgba(0,0,0,0.8);
 }
 .menu .menu-items a:hover {
     width: 300px;
@@ -239,11 +239,13 @@ main{
     background-color: darkred;
     color: white;
 }
+.main-header .header-suscribete{
+    width: 60%;
+}
 .main-header .header-suscribete,
 .main-header .redes-sociales{
     padding: 10px 30px;
     display: flex;
-    width: 50%;
 }
 .header{
     display: flex;
@@ -282,7 +284,7 @@ main{
 
 
 .header-suscribete span{
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 15px;
 }
 .header-suscribete a{
@@ -636,7 +638,7 @@ main{
     background-position: center center;
 }
 .rectangulo .background_rect{
-    background-image: url("../img/fachada_chorrillos.jpg");
+    background-image: url("../img/parrillero2.png");
 }
 .cuadrado .background_cuad{
     background-image: url("../img/fachada_chorrillos.jpg");
@@ -663,13 +665,13 @@ main{
 
 .cuadrado a{
     display: block;
-    width: 70%;
+    width: 75%;
     background-color: rgb(240, 185, 83);
     border-radius: 10px;
-    padding: 10px;
+    padding: 7px 15px;
     margin: 20px auto 0;
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -777,14 +779,14 @@ form.sign-in-form {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #444;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
 }
 /* CAJA DE TEXTO */
 .sign-in-form input[type="text"] {
-  max-width: 380px;
+  max-width: 300px;
   width: 100%;
   background-color: #d1cfcf;
   margin: 2px 0;
@@ -803,12 +805,12 @@ input::placeholder {
 .btn {
     display: block;
     background-color: darkred;
-    padding: 10px 20px;
+    padding: 8px 15px;
     letter-spacing: 2px;
     border-radius: 10px;
     border: 1px solid white;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     width: 150px;
     text-align: center;
     font-family: var(--font-principal);
@@ -874,7 +876,7 @@ input::placeholder {
   line-height: 1;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .panel-popud p {
   padding: 0.7rem 0;
