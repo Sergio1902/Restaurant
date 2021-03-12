@@ -479,8 +479,8 @@ main{
 .order-card{
     order: 1;
 }
-/***************************************************/
-/***********    MAIN - DESCRIPTIOON    *************/
+/*****************************************************************/
+/*********************    MAIN - DESCRIPTIOON    *****************/
 .main-descrip{
     background-color: rgb(209, 209, 212);
     color:rgb(48,48,48);
@@ -547,7 +547,7 @@ main{
 }
 
 /****************************************************/
-/***************   QUE TE PROVOCA     ***************/
+/***************   PARRILLAS   ***************/
 .main-provoca{
     background-image: url(../img/fondo-description1.jpg);
     background-position: center center;
@@ -673,12 +673,14 @@ main{
     color: black;
     font-size: 17px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 .cuadrado a:hover{
     background-color: #f6b12f;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.51) inset;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4) inset;
+    
 }
 
 
@@ -718,37 +720,48 @@ main{
         box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.51) inset;
 }
 
-/* MODAL */
-.mfp-inline-holder .mfp-content{
-    width: 50%;
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    left: 10%;
-}
-.mfp-inline-holder .mfp-content h4{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #333560;;
-}
-.popup-modal-dismiss{
-    color: black;
-}
-.background{
-    background-color: blue;
-    height: 350px;
-}
 
 /* POPUD - COTIZACION RESERVACIONES */
-
+.container-popud-global{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
 .container-popud {
   position: relative;
   width: 100%;
   background-color: #fff;
   height: 350px;
   overflow: hidden;
+  display: none;
 }
-
+.block-scroll{
+    overflow: hidden;
+}
+.block{
+    display: block;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal-text{
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 10px;
+    overflow: hidden;
+}
 .forms-container {
   position: absolute;
   width: 100%;

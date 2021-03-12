@@ -43,22 +43,15 @@
 
   }
 
-    /* POPUD RESERVATION */
-
-    .mfp-inline-holder .mfp-content{
-        width: 60%;
-        background-color: white;
-        border-radius: 12px;
-        overflow: hidden;
-        left: 0;
-        top: 5%;
-    }
-
     /* RESERVATIONS */
     .reservation{
       max-width: 750px;
     }
-    
+    .modal-text{
+      margin-top: 5%;
+      margin-left: 0;
+        width: 60%;
+    }
 }
 @media screen and (max-width:920px){
     h2{
@@ -174,7 +167,7 @@
     }
 
     .panel-popud h2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .panel-popud p {
       font-size: 0.9rem;
@@ -419,7 +412,9 @@
   }
       /* RESERVACIONES POPUD */
 
-      
+      .modal-text{
+          width: 70%;
+      }
       .panel-popud h2 {
         margin-top: 10px;
         font-size: 1rem;
@@ -611,7 +606,9 @@ input::placeholder {
   padding: 8px 20px;
   font-size: 18px;
   width: 110px;
-
+}
+.modal-text{
+  height: 420px;
 }
   /********************************/
 
@@ -654,6 +651,9 @@ input::placeholder {
 }
   }
   @media screen and (max-width:320px){
+    .modal-text{
+      height: 400px;
+    }
     .panel-popud h2 {
       padding: 0 10px;
   }

@@ -8,8 +8,5 @@ document.addEventListener("DOMContentLoaded", function (e) {
     btnHamburguesa()
     ORDER()
     validacionFormulario()
-
-    
-     
 })
 
