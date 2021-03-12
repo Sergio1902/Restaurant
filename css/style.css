@@ -439,7 +439,7 @@ main{
 }
 .img>.img-dentro{
     height: 50vh;
-    background-image: url("../img/parrillero.png");
+    background-image: url("../img/parrillero.jpg");
     background-position: center center;
     background-size: cover;
     transition: all 0.3s ease-in; 
